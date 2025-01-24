@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+	<style> 
+    body {
+      background-color: #a9d6d3;
+      font-family: "Trebuchet MS";
+    } 
+		  .navbar .nav-link {
+    color: #afd3d5 !important; 
+  }
+
+  .navbar .nav-link:hover {
+    color: #ffffff !important; 
+    background-color: #375143; 
+    border-radius: 5px;
+  }
+
+  .dropdown-menu {
+    background-color: #456a56; 
+    border: none;
+    border-radius: 5px;
+  }
+
+  .dropdown-item {
+    color: #afd3d5 !important; 
+  }
+
+  .dropdown-item:hover {
+    background-color: #375143; 
+    color: #ffffff !important; 
+  }
+		.content-section {
+  text-align: center; /* Centers the text content */
+margin: 20px auto;
+  width: 80%; /* Limits the width for better readability */
+  color: #456a56; /* Matches the website's primary text color */
+}
+
+.content-section h1 {
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #456a56; 
+  margin-bottom: 15px; 
+}
+
+/* Paragraph Style */
+.content-section p {
+  font-size: 18px;
+  color: #456a56;
+  padding: 10px;
+}
+	</style>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #456a56;">
+             <a href="homepage.html"> 
+            <img src="logo.png" alt="Logo" width="60" height="60"> </a>
+				   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav mr-auto">
+  <a class="nav-link dropdown-toggle" href="#" id="urbanChallengesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Urban Challenges & Solutions
+  </a>
+  <div class="dropdown-menu" aria-labelledby="urbanChallengesDropdown">
+    <a class="dropdown-item" href="airquality.html">Air Quality</a>
+	<a class="dropdown-item" href="waste.html">Sanitation & Waste</a>
+	<a class="dropdown-item" href="transportation.html"> Transportation</a>
+    <a class="dropdown-item" href="greenspaces.html">Green Spaces</a>
+  </div>
+</li> 
+		  <li class="nav-item">
+            <a class="nav-link" href="carbonfootprint.html">Carbon Footprint Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="takeaction.html">Take Action</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources & Glossary</a>
+          </li>
+      </ul>
+        <div class="d-flex">
+          <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#"> <i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+  </nav>
+	<br>  
+	<div class="content-section">
+  <h1>Urban Challenges & Solutions</h1>
+  <p> Cities and urban areas come with problems that impact the peaople who live there  like dirty air, piles of trash, and traffic jams. The good news? Science and technology are stepping in with solutions! From air-cleaning innovations to smarter waste systems and green spaces, explore how these ideas can improve life in cities and make them healthier, more sustainable places for everyone
+  </p>
+</div>	<br>
+	   <div id="customCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#customCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#customCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-slide">
+        <div class="carousel-image-container">
+          <img src="airqualitybg.jpg" alt="Air Quality" class="carousel-image">
+          <a href="airquality.html"> <button class="styled-button">Air Quality</button> </a>
+        </div>
+        <div class="carousel-image-container">
+          <img src="wastebg.jpg" alt="Waste" class="carousel-image">
+          <a href="waste.html"> <button class="styled-button">Sanitation & Waste</button> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-slide">
+        <div class="carousel-image-container">
+          <img src="transportation.jpg" alt="Transport" class="carousel-image">
+          <a href="transportation.html"> <button class="styled-button">Transportation</button>  </a>
+        </div>
+        <div class="carousel-image-container">
+          <img src="gs.jpg" alt="Green Spaces" class="carousel-image">
+          <a href="greenspaces.html"> <button class="styled-button">Green Spaces</button>  </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#customCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#customCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	<style> 
+	.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.carousel-image-container {
+  position: relative;
+  width: 35%;
+  margin: 0 1%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  .styled-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    background-color: #456a56;
+    color: #a9d6d3;
+    padding: 15px 30px; 
+    border: none;  
+	border-radius: 10px;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+	font-weight : bold ;
+
+  }
+
+.styled-button:hover {
+  background-color: #a9d6d3;
+  color: #456a56;
+	  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+		}
+		
+		</style>
+	<br> <br> <br> 
+	<div class="comparison-section">
+  <iframe 
+    class="comparison-video" 
+    src="https://www.youtube.com/embed/3Zh0L7wzKY8?si=52UiswmagVnPX9uh" 
+    allowfullscreen>
+  </iframe>
+
+		<div class="accordion-menu">
+    <details>
+      <summary>Unsustainable Cities</summary>
+      <p>An unsustainable city is an urban area that grows rapidly without planning for the long-term needs of its residents or the environment. These cities consume resources recklessly, produce excessive waste, and rely heavily on fossil fuels, which is why they experience higher levels of pollution, overcrowding, and environmental degradation. As a result, individuals residing in unsustainable cities face health issues and long term difficulties. Unsustainable cities prioritize short-term gains over long-term well-being, creating harmful living conditions for their inhabitants. <br> <br> 
+		  <b> Health Impacts of Sustainable Cities </b> 
+		  <br>- High levels of air pollution from industries and vehicles lead to respiratory problems, heart disease, and cancer. <br> 
+		  - Overcrowding and inadequate sanitation systems spread diseases like cholera, typhoid, and other infections. <br> 
+		  - Lack of green spaces leaves residents with fewer opportunities for exercise and relaxation, contributing to obesity and poor mental well-being. <br> 
+		  - Poor waste management results in unhygienic living conditions, attracting pests and causing diseases. <br> 
+		
+		</p>
+    </details>
+    <details>
+      <summary>Sustainable Cities</summary>
+      <p>A sustainable city is an urban area designed to meet the needs of its residents wihtout compromising the ability of future generations to thrive. These cities are designed with the well-being of their residents and the environment in mind, focusing on reducing pollution, conserving resources, and creating spaces that promote a better quality of life for everyone. The result is a healthier, more inclusive urban environment where resources are used responsibly, and everyone can benefit. <br> <br> 
+		  <b> Health Impacts of Sustainable Cities </b> 
+		  <br>- Cleaner air due to reduced reliance on fossil fuels improves respiratory health and lowers the risk of lung diseases. <br> 
+		  - Access to safe drinking water and proper sanitation prevents the spread of waterborne diseases. <br> 
+		  - Green spaces like parks and urban forests reduce stress, encourage physical activity, and improve mental well-being. <br> 
+		  - Reduced traffic congestion and noise pollution create a calmer, more livable environment for all residents <br> 
+
+</p>
+    </details>
+  </div>
+</div>
+ 
+	<style> 
+	.comparison-section {
+   display: flex;
+    justify-content: space-evenly; /* Adjusted spacing */
+    align-items: flex-start;
+    padding: 20px;
+    gap: 25px; /* Slight gap between elements */
+  }
+
+.comparison-video {
+  width: 55%;
+  aspect-ratio: 21 / 9; 
+  border: none;
+}
+
+.accordion-menu {
+  width: 45%;
+}
+details {
+  background-color: #456a56;
+	width: 600px;
+  border-radius: 5px;
+  padding: 10px;
+	margin-bottom: 20px;
+font-family: "Trebuchet MS";
+}
+		summary {
+			font-size: 16px;
+			color: #a9d6d3;
+			padding: 10px;
+			text-align: center;
+			font-weight: bold;		
+		} 
+
+		summary:hover {
+			color: #FFFFFF;
+		}
+
+details p {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #a9d6d3;
+}
+	</style> 
+	<div class="image-container">
+  <img src="stats2.png" class="img-fluid centered-image" alt="statistics">
+</div>
+
+<style>
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically, if needed */
+    padding: 20px 0; /* Adds vertical padding for better spacing */
+  }
+
+  .centered-image {
+    max-width: 90%; /* Slightly smaller width */
+    height: auto; /* Maintains aspect ratio */
+  }
+</style>
+	
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

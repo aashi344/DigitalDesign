@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+  <body>
+<style>
+    body {
+      background-color: #a9d6d3;
+      font-family: Arial, sans-serif;
+    } 
+		  .navbar .nav-link {
+    color: #afd3d5 !important; 
+  }
+
+  .navbar .nav-link:hover {
+    color: #ffffff !important; 
+    background-color: #375143; 
+    border-radius: 5px;
+  }
+
+  .dropdown-menu {
+    background-color: #456a56; 
+    border: none;
+    border-radius: 5px;
+  }
+
+  .dropdown-item {
+    color: #afd3d5 !important; 
+  }
+
+  .dropdown-item:hover {
+    background-color: #375143; 
+    color: #ffffff !important; 
+  }
+	  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #456a56;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      color: #456a56;
+      font-size: 1.2em;
+    }
+
+    /* Community Form Section */
+    .community-form {
+      background-color: #a9d6d3;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .community-form h2 {
+      color: #456a56;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border: 2px solid #456a56;
+      border-radius: 5px;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #456a56;
+      color: #ffffff;
+      font-size: 1.1em;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #355043;
+    }
+	.contributions-section {
+      margin-top: 50px;
+    }
+
+    .contributions-section h2 {
+      color: #456a56;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contributions-container {
+      background-color: #ffffff;
+      border: 2px solid #456a56;
+      border-radius: 10px;
+      padding: 15px;
+      min-height: 100px; /* Ensures it’s visible initially */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contribution-item {
+      margin-bottom: 15px;
+    }
+
+    .contribution-item h3 {
+      color: #456a56;
+      margin-bottom: 5px;
+    }
+
+    .contribution-item p {
+      color: #456a56;
+      margin: 5px 0;
+    }
+
+    .contribution-item .type {
+      font-size: 0.9em;
+      font-style: italic;
+      color: #a9d6d3;
+    }
+
+    /* Submission Display Section Placeholder */
+    .submissions-placeholder {
+      margin-top: 40px;
+      text-align: center;
+      color: #456a56;
+      font-style: italic;
+	  </style> 
+	  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #456a56;">
+	  <a href="homepage.html"> 
+	          <img src="logo.png" alt="Logo" width="60" height="60"></a>
+	  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav mr-auto">
+  <a class="nav-link dropdown-toggle" href="#" id="urbanChallengesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Urban Challenges & Solutions
+  </a>
+  <div class="dropdown-menu" aria-labelledby="urbanChallengesDropdown">
+    <a class="dropdown-item" href="airquality.html">Air Quality</a>
+    <a class="dropdown-item" href="greenspaces.html">Green Spaces</a>
+    <a class="dropdown-item" href="transportation.html">Transportation</a>
+    <a class="dropdown-item" href="waste.html">Sanitation & Waste</a>
+  </div>
+</li> 
+		  <li class="nav-item">
+            <a class="nav-link" href="carbonfootprint.html">Carbon Footprint Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="takeaction.html">Take Action</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources & Glossary</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#"> <i class="fab fa-facebook"></i></a>
+        </div>
+		</div>
+  </nav>
+	
+	<div class="container">
+  <!-- Header -->
+  <h1>Community Contributions</h1>
+  <p>Share your tips, feedback, and ideas to make sustainability accessible for everyone!</p>
+
+  <!-- Community Form -->
+  <div class="community-form">
+    <h2>Submit Your Contribution</h2>
+    <form id="community-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="type">Type of Contribution</label>
+      <select id="type" name="type" required>
+        <option value="tip">Sustainability Tip</option>
+        <option value="feedback">Feedback</option>
+        <option value="idea">Idea</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your contribution here..." rows="5" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- Placeholder for Submissions -->
+  <div class="contributions-section">
+    <h2>Community Contributions</h2>
+    <div class="contributions-container" id="contributions-container">
+      <!-- Contributions will be dynamically populated here -->
+    </div>
+  </div>
+</div>
+		  
+<script src="js.js"> </script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+		  	<script src="js.js"> </script>
+
+  </body>
+</html>
